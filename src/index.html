@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--title of the webapp-->
     <title>messages app</title>
+    
     <!--font link to google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <!--link to style sheet-->
     <link rel="stylesheet" href="style.css">
     <!--link to script-->
@@ -19,29 +21,123 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!--header container-->
-    <div class="headerWrapper">
-        <!--logo container-->
-        <div class="logoWrapper">
-            <i class="fa-solid fa-paper-plane"></i>
-        </div>
+    <div class="headerWrapper" style="padding: 95px 0px 0px 0px; margin: 35p 5px 5px 5px;">
+
         <!--navnigation bar-->
-        <ul>
-            <li> <i class="fa-solid fa-message"></i></li>
-            <li><i class="fa-solid fa-newspaper"></i></li>
-            <li>community</li>
-            <li><i class="fa-solid fa-user-group"></i></li>
+        <aside id="sidebar">
+        <ul id="topNav" style="color: blue;" >
+
+            <!--messages button-->
+            <li>
+                <button title="messages" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i  class="fa-solid fa-message"></i>
+                </button>
+           
+            </li>
+
+            <!--story button-->
+            <li>  
+                <button title="story" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i  class="fa-solid fa-newspaper"></i>
+                </button>                  
+            </li>
+
+            <!--communities button-->
+            <li>
+                
+                <button title="communities" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i  class="fa-solid fa-earth-americas"></i>
+                </button>                  
+            </li>
+
+            <!--Groups button-->
+            <li>
+                
+                <button title="groups" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i  class="fa-solid fa-user-group"></i>
+                </button>                  
+        </li>
 
         </ul>
-        <li><i class="fa-solid fa-picture-in-picture"></i></li>
-        <li><i class="fa-solid fa-user"></i></li>
 
-        <ul>
-        <li><i class="fa-solid fa-picture-in-picture"></i></li>
-        <li><i class="fa-solid fa-gear"></i></li>
-        <li><i class="fa-solid fa-user"></i></li>
+        <!--base navnigation section-->
+        <ul id="bottomNav" style="color: blue;">
+            <!--media button-->
+        <li>
+            
+                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i title="media" class="fa-solid fa-image"></i>
+                </button>               
+            
+        </li>
+
+        <!--settings button-->
+        <li>
+            
+                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i title="settings" class="fa-solid fa-gear"></i>
+                </button>               
+        </li>
+
+        <!--profile button-->
+        <li>
+                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                     <i title="profile" class="fa-solid fa-user"></i>
+                </button>                 
+            
+        </li>
         </ul>
     </div>
+
+        </aside>
+
+    <main style="display:grid; grid-template-columns: auto 1fr;">
+        <!--recent chats section-->
+        <section>
+        
+
+            <!--logo and name-->
+            <div id="logoAndName" style="display: flex; color: blue; padding: 3px 1px 15px 1px; margin: 5px 0px 5px 5px; font-size: x-large;">
+                <i class="fa-solid fa-paper-plane" style="padding: 10px 10px 10px 1%; font-size: xxx-large;"></i>
+                <h2 style="padding: 22px 10px 10px 1px; font-weight: 200;">chat app</h2>
+
+                <div style="padding: 10px 10px 1px 100px;">
+                <!--new chat button-->
+                <button style="color: blue; font-size: small; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px; display: inline; border-radius: 50%; border: 1px;">
+                    <i title="new chat" class="fa-solid fa-envelope" style="padding: 10px 10px 10px 10px;"></i>  
+                </button>
+
+                <!--menu button-->
+                <button style="color: blue; font-size: small; padding: 10px 10px 10px ; margin: 10px 10px 10px 10px; display: inline; border-radius: 50%; border: 1px;">
+                    <i title="menu" class="fa-solid fa-bars" style="padding: 10px 10px 10px 10px;"></i>
+                </button><br>
+                </div>
+
+                
+            </div>
+            <!--top bar -->
+
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input  placeholder=" Search Or Start A  New Chat" type="text">
+                <div id="chats">
+                    <ul>
+                        <li>All</li>
+                        <li>Unread</li>
+                        <li>Favourites</li>
+                        <li>Groups</li>
+                    </ul>
+                </div>
+            </span>
+        
+        </section>
+        <section style="border: 10px; border-style: solid; border-width: 0px 0px 0px 1px;">
+            <header>Me</header>
+        </section>
+
+    </main>
     
 </body>
 </html>
