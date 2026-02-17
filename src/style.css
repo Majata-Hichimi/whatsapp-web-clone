@@ -71,12 +71,26 @@ main{
 }
 
 input{
-    padding: 10px 373px 10px 0px;
+    padding: 10px 300px 10px 20px;
     border-radius: 20px;
     border-style:inset;
     border-width: 1px;
     font-weight: lighter;
     
+}
+
+iframe{
+    border: 10px 10px 10px 10px;
+    border-style: none;
+    padding: 600px 100px 100px 850px;
+
+}
+
+#userMessage{
+    padding: 10px 920px 10px 10px ;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
 }
 
 

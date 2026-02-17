@@ -20,7 +20,7 @@
     <!--font awsome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body style="position: fixed; margin: 0px;">
 
     <!--header container-->
     <div class="headerWrapper" style="padding: 95px 0px 0px 0px; margin: 35p 5px 5px 5px;">
@@ -100,7 +100,7 @@
 
             <!--logo and name-->
             <div id="logoAndName" style="display: flex; color: blue; padding: 3px 1px 15px 1px; margin: 5px 0px 5px 5px; font-size: x-large;">
-                <i class="fa-solid fa-paper-plane" style="padding: 10px 10px 10px 1%; font-size: xxx-large;"></i>
+                <i class="fa-solid fa-paper-plane" style="padding: 35px 10px 10px 1%; font-size: x-large;"></i>
                 <h2 style="padding: 22px 10px 10px 1px; font-weight: 200;">chat app</h2>
 
                 <div style="padding: 10px 10px 1px 100px;">
@@ -111,7 +111,7 @@
 
                 <!--menu button-->
                 <button style="color: blue; font-size: small; padding: 10px 10px 10px ; margin: 10px 10px 10px 10px; display: inline; border-radius: 50%; border: 1px;">
-                    <i title="menu" class="fa-solid fa-bars" style="padding: 10px 10px 10px 10px;"></i>
+                    <i class="fa-solid fa-plus" style="padding: 10px 10px 10px 10px;"></i>
                 </button><br>
                 </div>
 
@@ -120,8 +120,8 @@
             <!--top bar -->
 
             <span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input  placeholder=" Search Or Start A  New Chat" type="text">
+               
+                <input  placeholder=" Search " type="text">
                 <div id="chats">
                     <ul>
                         <li>All</li>
@@ -133,8 +133,24 @@
             </span>
         
         </section>
-        <section style="border: 10px; border-style: solid; border-width: 0px 0px 0px 1px;">
-            <header>Me</header>
+        <section style="border: 10px; border-style: solid; border-width: 0px 0px 0px 1px; padding: 0px 0px 0px 0px;">
+            <header id="dashPanel" style=" padding-bottom: 20px; padding-top: 0px; border-color:black; border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px; border-width: 1px;" title="profile">
+    <div id="user profile" style="display: inline-block;">
+        <p class="userName" ">
+        </p>
+        <img src="" alt="profilePicture">
+    </div>
+
+</header>    
+            <iframe src="/chat.html" style="height: 800px; width: 1550px; padding: 0px; display: inline; margin: 0px;"></iframe>
+<footer style="position: fixed; padding-bottom: 0px; padding-top: 10px;">
+
+        <form style="padding: 0px 0px 0px 40px; display: inline; position: fixed; justify-content: center; align-items: center;" >
+            <button title="Attachment" type="submit" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px;  font-size: medium; border: 1px;"><i class="fa-solid fa-paperclip"></i></button>
+            <input id="userMessage" placeholder="Type Your Message" >
+            <button type="submit" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px;  font-size: medium; border: 1px;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+</footer>
         </section>
 
     </main>
