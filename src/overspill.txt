@@ -1,0 +1,7 @@
+    <div id="user profile" style="display: inline; padding-left: 35px; padding-top: 35px;">
+        <img src=""  style="border-style: solid; border-radius: 50%; padding: 25px 25px 25px 25px; border-width: 1px; ">
+                <p class="userName" " style="padding: 22px 10px 10px 1px; font-weight: 200;">
+                    New Chat
+                </p> 
+
+    </div>

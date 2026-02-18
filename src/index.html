@@ -1,4 +1,4 @@
-<!--simple whatsapp web clone -->
+<!-- whatsapp web clone -->
 <!DOCTYPE html>
 <!--language set to English-->
 <html lang="en">
@@ -21,76 +21,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body style="position: fixed; margin: 0px;">
-
     <!--header container-->
     <div class="headerWrapper" style="padding: 95px 0px 0px 0px; margin: 35p 5px 5px 5px;">
 
         <!--navnigation bar-->
         <aside id="sidebar">
         <ul id="topNav" style="color: blue;" >
-
             <!--messages button-->
             <li>
-                <button title="messages" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="messageBTN" title="messages" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i  class="fa-solid fa-message"></i>
                 </button>
-           
-            </li>
-
+               
             <!--story button-->
             <li>  
-                <button title="story" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="storyBTN" title="story" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i  class="fa-solid fa-newspaper"></i>
                 </button>                  
             </li>
 
+
             <!--communities button-->
             <li>
-                
-                <button title="communities" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="commBTN" title="communities" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i  class="fa-solid fa-earth-americas"></i>
                 </button>                  
             </li>
 
             <!--Groups button-->
-            <li>
-                
-                <button title="groups" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+            <li> 
+                <button id="groupsBTN" title="groups" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i  class="fa-solid fa-user-group"></i>
                 </button>                  
         </li>
-
         </ul>
+
 
         <!--base navnigation section-->
         <ul id="bottomNav" style="color: blue;">
             <!--media button-->
         <li>
-            
-                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="mediaBTN" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i title="media" class="fa-solid fa-image"></i>
-                </button>               
-            
+                </button>      
+                
+                
         </li>
 
         <!--settings button-->
         <li>
-            
-                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="settingsBTN" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i title="settings" class="fa-solid fa-gear"></i>
                 </button>               
         </li>
 
         <!--profile button-->
         <li>
-                <button style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
+                <button id="profileBTN" style="color: blue; border-radius: 50%; padding: 10px 10px 10px 10px;margin: 10px 10px 10px  10px; display: block; font-size: small; border: 1px;">
                      <i title="profile" class="fa-solid fa-user"></i>
-                </button>                 
-            
+                </button>                  
         </li>
+
         </ul>
     </div>
-
         </aside>
 
     <main style="display:grid; grid-template-columns: auto 1fr;">
@@ -124,25 +117,39 @@
                 <input  placeholder=" Search " type="text">
                 <div id="chats">
                     <ul>
-                        <li>All</li>
-                        <li>Unread</li>
-                        <li>Favourites</li>
-                        <li>Groups</li>
+                        <li class="chatNav"><button style="padding: 1px 20px 1px 20px; border-style: none;">All</button></li>
+                        <li class="chatNav"><button style="padding: 1px 10px 1px 10px; border-style: none;">Unread</button></li>
+                        <li class="chatNav"><button style="padding: 1px 10px 1px 10px; border-style: none;">Favourite</button></li>
+                        <li class="chatNav"><button style="padding: 1px 10px 1px 10px; border-style: none  ;">Groups</button></li>
                     </ul>
                 </div>
             </span>
         
         </section>
-        <section style="border: 10px; border-style: solid; border-width: 0px 0px 0px 1px; padding: 0px 0px 0px 0px;">
-            <header id="dashPanel" style=" padding-bottom: 20px; padding-top: 0px; border-color:black; border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px; border-width: 1px;" title="profile">
-    <div id="user profile" style="display: inline-block;">
-        <p class="userName" ">
-        </p>
-        <img src="" alt="profilePicture">
-    </div>
+        <section style="border: 10px; border-style: solid; border-width: 0px 0px 0px 1px; padding: 10px 10px 10px 5px;">
+    <header id="dashPanel" style=" padding-bottom: 20px; padding-top: 0px; border-color:black; border-style: none; border-top: 0px; border-left: 0px; border-right: 0px; border-width: 1px;" title="profile">
+          
+        <!--user profile data-->
+<div class="userProfile" style="display: flex;" title="profile">
 
-</header>    
-            <iframe src="/chat.html" style="height: 800px; width: 1550px; padding: 0px; display: inline; margin: 0px;"></iframe>
+                <p style="padding: 35px 10px 10px 20px; font-weight: 200;">New Chat<br>click for more user information</p>
+                
+
+                <div style="padding: 10px 10px 1px 950px;">
+                <!--new chat button-->
+                <button style="color: blue; font-size: small; padding: 10px 10px 10px 10px; margin: 10px 10px 10px 10px; display: inline; border-radius: 50%; border: 1px;">
+                    <i title="new chat" class="fa-solid fa-envelope" style="padding: 10px 10px 10px 10px;"></i>  
+                </button>
+
+</div>
+
+             
+
+
+   
+
+    </header>    
+            <iframe src="chat.html" style="height: 770px; width: 1550px; padding: 0px; display: inline; margin: 0px;"></iframe>
 <footer style="position: fixed; padding-bottom: 0px; padding-top: 10px;">
 
         <form style="padding: 0px 0px 0px 40px; display: inline; position: fixed; justify-content: center; align-items: center;" >
